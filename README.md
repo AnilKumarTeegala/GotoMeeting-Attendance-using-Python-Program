@@ -15,5 +15,7 @@ Whats going on you can see the example in `Attendance.ipynb` and run the cells w
 
 The file name will be the `presentDate.xlsx`
 
+`Note` Go to meeting Student Login name should be rollNumber[sep]Name[sep]CollegeName --> Here sep can be " ", -, _
+
 
 Hope it will help you🙂
