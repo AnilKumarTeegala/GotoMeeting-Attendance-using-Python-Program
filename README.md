@@ -4,7 +4,7 @@ This Repo Contains the python module and sample PY Notebook for giving the atten
 ## Step 1: Clone this Repository
 
 ```git
-git clone git@github.com:AnilKumarTeegala/GotoMeeting-Attendance-using-Python-Program-.git
+git clone git@github.com:AnilKumarTeegala/GotoMeeting-Attendance-using-Python-Program.git
 ```
 
 ## Step 2: Run `attendance.py`
