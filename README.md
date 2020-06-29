@@ -7,9 +7,11 @@ This Repo Contains the python module and sample PY Notebook for giving the atten
 git clone git@github.com:AnilKumarTeegala/GotoMeeting-Attendance-using-Python-Program-.git
 ```
 
-## Step 2:
+## Step 2: Run `attendance.py`
 
-After Cloning Repo give the file paths of your original student list and gotomeeting attendance sheet in the `Attendance.ipynb` and run all cells then the output excel sheet will be generated with Present/Absent.
+After Cloning Repo give the file paths of your original student `csv` and gotomeeting attendance in `excel` format and final output sheet will be generated in the cloned directory
+
+Whats going on you can see the example in `Attendance.ipynb` and run the cells with correct files then the output excel sheet will be generated with Present/Absent column.
 
 The file name will be the `presentDate.xlsx`
 
