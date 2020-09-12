@@ -29,6 +29,8 @@ you have to save the main registered data in the `.csv` format
 
 ## Step 4: Now Open `GotoMeeting_Student_RollNo_Extraction_For_Attendance.ipynb`
 
+To open the file you should first install Jupyter Notebook environment and familiar with the Notebook environment
+
 To know how its working I've added sample students data and GoToMeeting attendees data so run all the cells and then one excel sheet will be generated with the given file name generate with rollNo and Present/Absent column.
 
 The file name will be the givenFileName.xlsx
