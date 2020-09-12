@@ -40,4 +40,6 @@ The file name will be the givenFileName.xlsx
 1. After update the file paths of your original student in`.csv` and GoToMeeting attendance in `.xls` format and update the file name of the output file as your wish final output sheet will be generated in the cloned directory
 
 
-Hope it will help you🙂
+Hope it will help you🙂 
+
+If it works for you click on ⭐ on top of repo
