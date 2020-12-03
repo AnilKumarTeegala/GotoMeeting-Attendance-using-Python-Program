@@ -1,20 +1,20 @@
 from pandas import read_csv, read_excel
-import pandas as pd
 
 def split_name(df, sep):
-    return [name.split(sep)[0].strip().strip('()') for name in df]
-
-def filterdf(df, time):
-    return df[df['Time in Session (minutes)'] >= time]
+    return [[name[0].split(sep)[0].strip().strip('()'), name[1]] for name in df.values]
 
 def csv(file_path):
-    return read_csv(file_path)
+    df = read_csv(file_path)
+    # Converting all the roll numbers to capital 
+    df['Roll Number'] = df['Roll Number'].str.upper()
+    return df
 
 def excel(filepath):
-        return read_excel(filepath, skiprows = 6)[['Name','Time in Session (minutes)']]
+    df = read_excel(filepath, skiprows = 6)[['Name','Time in Session (minutes)']]
     
-def remove_trainers(df):
-        return [name for name in df if not name.isalpha() and 'APSSDC' not in name]
+    # Converting all the roll numbers to capital 
+    df['Name'] = df['Name'].str.upper()
     
-def rollNumber_upper(col):
-    return [number.upper() for number in col]
+    # Grouping all the rejoined students if any and calculating total time in the session
+    df = df.groupby('Name').sum().reset_index()
+    return df
